@@ -6,18 +6,21 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
+import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ])
-  ],
-  declarations: [HomePage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: HomePage
+            }
+        ]),
+        ChartsModule
+    ],
+    declarations: [HomePage]
 })
 export class HomePageModule {}
